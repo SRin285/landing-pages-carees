@@ -1,0 +1,109 @@
+.footer{
+  background-color: $heading-color;
+}
+.footer {
+  &-container{
+  display:flex;
+  align-items: end;
+  flex-direction: column;
+  }
+  &-start{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 336px;
+    padding-top: 180px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid $outline-color;
+  }
+    &-heading{
+      color: $white-color;
+      margin-bottom: 0;
+      text-align: start;
+  }
+  &-search{
+    display:flex;
+    align-items: center;
+    gap: 0 10px;
+    padding: 22px 34px;
+}
+  &-end{
+    display: flex;
+    align-items: center;
+    justify-items: end;
+    margin: 48px 0;
+    
+  }
+  &-menu{
+    display:flex;
+    align-items: center;
+    gap: 0 42px;
+  }
+  &-item{
+    list-style-type: none;
+  
+  }
+  &-button{
+    align-items: center;
+  color: $white-color;
+  }
+  &-link{
+    color: $text-color;
+  }
+
+}
+@media (hover:hover){
+  .menu-link{
+    position: relative;
+    transition: all 0.2s linear;
+    &::after{
+      content: "";
+      bottom: -10px;
+      left: auto;
+      right: 0;
+      width: 0;
+      height: 3px;
+      position: absolute;
+      background-color: $primary-color;
+      transition: all 0.2s linear;
+    }
+    &:hover{
+      color: $primary-color;
+      font-weight: 600;
+      &::after{
+        width: 100%;
+        left: 0;
+        right: auto;
+      }
+    }
+  }
+}  
+@media screen and (max-width: 1279.98px) {
+  .footer{
+    &-start{
+      gap: 0 156px;
+    }
+  }
+}
+
+@media screen and (max-width: 1023.98px) {
+  .footer{
+    &-start{
+      gap: 0px;
+    }  
+  }  
+}  
+@media screen and (max-width: 767.98px) {
+  .footer-start{
+    flex-direction: column;
+    gap: 100px 0;
+  }
+  .footer-heading{
+    font-size: 39px;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  .footer-heading{
+    font-size: 33px;
+  }
+}

@@ -1,0 +1,32 @@
+
+.logos {
+    background-color: $white-color;
+  &-container{
+    padding-top: 100px;
+    padding-bottom: 180px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px 0;
+    justify-items: center;
+
+}
+  &-header{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: calc(48 / 32);
+    align-items: center;
+}
+  &-item{
+    display:flex;
+    align-items: center;
+    gap: 0 60px;
+  }
+}
+@media screen and (max-width: 1023.98px) {
+  .logos-container{
+    padding-top: 0;
+    padding-bottom: 70px;
+  }
+}

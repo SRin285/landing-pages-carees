@@ -1,0 +1,61 @@
+h1,h2,h3,h4,h5,h6{
+  color: $heading-color;
+  font-weight: bold;
+
+}
+.text{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+}
+.text-medium{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(28 / 16);
+}
+.text-button{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(28 / 16);
+}
+.text-smail{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(28 / 16);
+}
+.text-heading-list{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: calc(34 / 24);
+  color: $heading-color;
+}
+
+.text-heading{
+  font-weight: 600;
+  font-size: 42px;
+  line-height: calc(52 / 42);
+  margin-bottom: 18px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .text-heading{
+    font-size: 25px;
+    color: $primary-color;
+  }
+.text-heading-list{
+  font-size: 18px;
+}
+}
+
+@media screen and (max-width: 374.98px) {
+  .text-heading{
+    font-size: 25px;
+  }
+}
+
+
+
+
+
+
+

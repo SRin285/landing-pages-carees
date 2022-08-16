@@ -1,0 +1,71 @@
+button{
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: $font;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 33px;
+  border-radius: 10px;
+  font-family: $font;
+  line-height: 1;
+  font-size: 18px;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  &--primary{
+    font-weight: 600;
+    background-color: $primary-color;
+    color: white;
+  } 
+  &--outline{
+    background-color: transparent;
+    color: $heading-color;
+    font-weight: 600;
+    padding: 13px 30px;
+    outline: $outline-color solid 1px;
+  }
+  &--rounded{
+    border-radius: 12px;
+    padding: 15px 34px;
+  }
+  &--apply{
+    border-radius: 12px;
+    padding: 4px 22px;
+    color: $white-color;
+    background-color: #21202A;
+  }
+  &--shadow{
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 90%;
+      height: 100%;
+      transform: translate(-50% , 50%);
+      background-color: rgba(33, 32, 42, 0.08);
+      filter: blur(54px);
+      border-radius: inherit;
+    }
+  }
+  &--load{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(30 / 18);
+    text-align: center;
+    color: $heading-color;
+    background-color: $white-color;
+    padding: 15px 25px;
+}
+}
+.button-shadow{
+  -webkit-box-shadow: 4px 4px 47px -23px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px 4px 47px -23px rgba(0,0,0,0.75);
+  box-shadow: 4px 4px 47px -23px rgba(0,0,0,0.75);
+}

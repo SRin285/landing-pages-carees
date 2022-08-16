@@ -1,0 +1,48 @@
+
+.feature {
+  background-color: $white-color;
+  padding-bottom: 180px;
+  &-container{
+    display: flex;
+    align-items: center;
+    gap: 0 130px;
+}
+  &-content{
+    max-width: 470px;
+    text-align:  start;
+}
+  &-desc{
+    margin-bottom: 28px;
+}
+  &-list{
+    margin-bottom: 38px;
+  }
+  &-item{
+    display:flex;
+    align-items: center;
+    gap: 0 10px;
+    margin-bottom: 12px;
+
+}
+}
+.button {
+  &--primary{
+    border-radius: 8px;
+}
+}
+@media screen and (max-width: 1024px) {
+  .feature-container{
+    gap: 0 50px;
+    
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .feature{
+    padding-bottom: 80px;
+  }
+  .feature-container{
+    flex-direction: column-reverse;
+    gap: 30px 0;
+  }
+}
+
